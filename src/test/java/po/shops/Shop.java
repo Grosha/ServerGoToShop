@@ -1,5 +1,5 @@
 
-package po.shop;
+package po.shops;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

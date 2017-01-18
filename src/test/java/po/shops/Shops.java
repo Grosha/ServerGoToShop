@@ -1,11 +1,12 @@
 
-package po.shop;
+package po.shops;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import po.Input;
 
-public class GoToShopObject {
+public class Shops {
 
     @SerializedName("shops")
     @Expose

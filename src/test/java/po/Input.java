@@ -1,9 +1,10 @@
 
-package po.shop;
+package po;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import po.shops.Get;
 
 public class Input {
 

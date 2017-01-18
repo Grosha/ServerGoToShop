@@ -13,5 +13,5 @@ public interface Parameters {
     String imgMap = "imagemap";
     String discounts = "discounts";
     String distance = "distance";
-    String bdParam = "false";
+    String fakeParam = "fake";
 }
