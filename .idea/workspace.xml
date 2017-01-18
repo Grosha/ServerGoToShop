@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44c3949b-1059-45a6-be39-069dbbac813f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/https/ErrorResponses.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/po/error/Get.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/po/error/ShopServerError.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/https/ImgAPI.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/po/shop/Get.java" afterPath="$PROJECT_DIR$/src/test/java/po/shops/Get.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/po/shop/GoToShopObject.java" afterPath="$PROJECT_DIR$/src/test/java/po/shops/Shops.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/po/shop/Input.java" afterPath="$PROJECT_DIR$/src/test/java/po/Input.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/po/shop/Shop.java" afterPath="$PROJECT_DIR$/src/test/java/po/shops/Shop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/https/HTTPSRequest.class" afterPath="$PROJECT_DIR$/target/test-classes/https/HTTPSRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/https/Parameters.class" afterPath="$PROJECT_DIR$/target/test-classes/https/Parameters.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/https/TestGetShop.class" afterPath="$PROJECT_DIR$/target/test-classes/https/TestGetShop.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/https/Parameters.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/https/TestGetShop.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/https/HTTPSRequest.java" afterPath="$PROJECT_DIR$/src/test/java/https/HTTPSRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/https/Parameters.java" afterPath="$PROJECT_DIR$/src/test/java/https/Parameters.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/https/TestGetShop.java" afterPath="$PROJECT_DIR$/src/test/java/https/TestGetShop.java" />
     </list>
+    <list id="7bba9bda-9481-4dc8-9f59-54d5f0009a22" name="Failed commit: Default" comment="refactoring" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +22,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestGetShop.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestGetShop.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/https/TestGetShop.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="643">
@@ -46,24 +34,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parameters.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HTTPSRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/https/HTTPSRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parameters.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/https/Parameters.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HTTPSRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/https/HTTPSRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -705,6 +693,21 @@
       <option name="presentableId" value="Default" />
       <updated>1484602779733</updated>
     </task>
+    <task id="LOCAL-00001" summary="add new test&#10;add object for error&#10;refactoring">
+      <created>1484773223771</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1484773223771</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactoring">
+      <created>1484774503456</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1484774503456</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -809,6 +812,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add new test&#10;add object for error&#10;refactoring" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -950,16 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/https/HTTPSRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/po/Input.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1027,11 +1025,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/https/Parameters.java">
+    <entry file="file://$PROJECT_DIR$/target/test-classes/https/HTTPSRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="234">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#450#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1042,6 +1042,24 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/https/HTTPSRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/https/Parameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
