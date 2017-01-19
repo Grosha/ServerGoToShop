@@ -5,6 +5,8 @@ import po.shops.Shops;
 import retrofit2.Call;
 import retrofit2.http.*;
 
+import java.util.Locale;
+
 
 /**
  * Created by groshkka on 18.06.16.
@@ -13,7 +15,7 @@ public interface HTTPSRequest {
 
     //new api
     @GET("uk/api/shops")
-    Call<Shops> getShops(@Query("limit") int limit, @Query("name") String name, @Query("city_id") long city_id, @Query("fields") String fields, @Query("offset") int offset);
+    Call<Shops> getShops(@Query("limit") int limit, @Query("name") String name, @Query("lat") Double lat, @Query("lng") Double lng, @Query("city_id") long city_id, @Query("fields") String fields, @Query("offset") int offset);
 
     /*@Headers({
             "Guid:3d22625a-f62e-450e-a44f-6ccdd2abaedb",

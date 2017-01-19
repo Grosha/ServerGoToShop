@@ -15,6 +15,9 @@ public class Shop {
     @SerializedName("categories_id")
     @Expose
     private String categoriesId;
+    @SerializedName("distance")
+    @Expose
+    private float distance;
     @SerializedName("image100")
     @Expose
     private String image100;
@@ -30,6 +33,25 @@ public class Shop {
     @SerializedName("discounts")
     @Expose
     private String discounts;
+    @SerializedName("units")
+    @Expose
+    private String units;
+
+    public String getUnits() {
+        return units;
+    }
+
+    public void setUnits(String units) {
+        this.units = units;
+    }
+
+    public float getDistance() {
+        return distance;
+    }
+
+    public void setDistance(float distance) {
+        this.distance = distance;
+    }
 
     public String getId() {
         return id;
