@@ -1,4 +1,4 @@
-package https;
+package ukr;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -33,7 +33,7 @@ public class ShopUkrApi extends API {
         });*/
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://gtsop.com")
+                .baseUrl("ukr://gtsop.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(httpClient())
                 .build();

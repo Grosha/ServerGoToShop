@@ -1,11 +1,10 @@
-package https;
+package ukr;
 
 
+import po.cityinfo.CityInfo;
 import po.shops.Shops;
 import retrofit2.Call;
 import retrofit2.http.*;
-
-import java.util.Locale;
 
 
 /**
@@ -16,6 +15,12 @@ public interface HTTPSRequest {
     //new api
     @GET("uk/api/shops")
     Call<Shops> getShops(@Query("limit") int limit, @Query("name") String name, @Query("lat") Double lat, @Query("lng") Double lng, @Query("city_id") long city_id, @Query("fields") String fields, @Query("offset") int offset);
+
+    @GET("uk/api/cities/{city_id}")
+    Call<CityInfo> getCityInfoUkrUkr(@Path("city_id") long cityId);
+
+    @GET("/api/cities/{city_id}")
+    Call<CityInfo> getCityInfoUkrRu(@Path("city_id") long cityId);
 
     /*@Headers({
             "Guid:3d22625a-f62e-450e-a44f-6ccdd2abaedb",

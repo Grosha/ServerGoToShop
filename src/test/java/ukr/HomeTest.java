@@ -1,6 +1,7 @@
-package https;
+package ukr;
 
 import com.google.gson.Gson;
+import po.error.ServerErrorGA;
 import po.error.ShopServerError;
 
 import static org.testng.Assert.assertEquals;
@@ -16,6 +17,17 @@ public class HomeTest {
         ShopServerError expectedServerError = new ShopServerError();
         expectedServerError.setError(message);
         assertEquals(actualServerError.getError(), expectedServerError.getError(), messageJenkinsl);
+    }
+
+    public static void checkResponsesAr(String responses, String message, String errorDesctiption, String messageJenkinsl) {
+        Gson gson = new Gson();
+        ServerErrorGA actualServerError = gson.fromJson(responses, ServerErrorGA.class);
+
+        ServerErrorGA expectedServerError = new ServerErrorGA();
+        expectedServerError.setError(message);
+        expectedServerError.setErrorDescription(errorDesctiption);
+        assertEquals(actualServerError.getError(), expectedServerError.getError(), messageJenkinsl);
+        assertEquals(actualServerError.getErrorDescription(), expectedServerError.getErrorDescription(), messageJenkinsl);
     }
 
     public static String getTheseParameters(String... param) {

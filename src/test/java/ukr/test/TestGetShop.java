@@ -1,14 +1,13 @@
-package https;
+package ukr.test;
 
 
-import com.google.gson.Gson;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import po.Input;
-import po.error.Get;
-import po.error.ShopServerError;
 import po.shops.Shops;
 import retrofit2.Response;
+import ukr.ErrorResponses;
+import ukr.Parameters;
+import ukr.ShopUkrApi;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.IOException;
@@ -17,8 +16,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import static https.HomeTest.checkResponses;
-import static https.HomeTest.getTheseParameters;
+import static ukr.HomeTest.checkResponses;
+import static ukr.HomeTest.getTheseParameters;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
 
@@ -32,10 +31,10 @@ public class TestGetShop implements Parameters, ErrorResponses {
     @DataProvider(name = "getShop")
     public static Object[][] getShopParameters() {
         return new Object[][]{
-                {1, null, 50.4659311, 30.6263447, KIEV, getTheseParameters(id, name, catId, img25, img50, img100, imgMap, discounts, distance), 0, 200, null},//all parameter
-                {1, null, null, null, KIEV, getTheseParameters(id, name, catId, img25, img50, img100, imgMap, discounts, distance), 0, 200, null},//all parameter
-                {1, null, 50.4659311, 30.6263447, DNIPRO, getTheseParameters(fakeParam), 0, 400, INVALID_PARAMETER_FIEDS},//fake parameter
-                {1, null, null, null, DNIPRO, getTheseParameters(id, name, catId, fakeParam), 0, 400, INVALID_PARAMETER_FIEDS},//fake parameter
+                {1, null, 50.4659311, 30.6263447, KIEV_ID, getTheseParameters(id, name, catId, img25, img50, img100, imgMap, discounts, distance), 0, 200, null},//all parameter
+                {1, null, null, null, KIEV_ID, getTheseParameters(id, name, catId, img25, img50, img100, imgMap, discounts, distance), 0, 200, null},//all parameter
+                {1, null, 50.4659311, 30.6263447, DNIPRO_ID, getTheseParameters(fakeParam), 0, 400, INVALID_PARAMETER_FIEDS},//fake parameter
+                {1, null, null, null, DNIPRO_ID, getTheseParameters(id, name, catId, fakeParam), 0, 400, INVALID_PARAMETER_FIEDS},//fake parameter
         };
     }
 
@@ -55,9 +54,9 @@ public class TestGetShop implements Parameters, ErrorResponses {
     @DataProvider(name = "getIconShop")
     public static Object[][] getIconShopParameters() {
         return new Object[][]{
-                {11, null, 50.4659311, 30.6263447, KIEV, getTheseParameters(id, name, catId, img25, img50, img100, imgMap, discounts, distance), 0, 200, null},//all parameter
+                {11, null, 50.4659311, 30.6263447, KIEV_ID, getTheseParameters(id, name, catId, img25, img50, img100, imgMap, discounts, distance), 0, 200, null},//all parameter
                 //{25, null, 50.4659311, 30.6263447, VINICA, getTheseParameters(id, name, catId, img25, img50, img100, imgMap, discounts, distance), 0, 200, null},//all parameter
-                //{1, null, null, null, KIEV, getTheseParameters(id, name, catId, img25, img50, img100, imgMap, discounts, distance), 0, 200, null},//all parameter
+                //{1, null, null, null, KIEV_ID, getTheseParameters(id, name, catId, img25, img50, img100, imgMap, discounts, distance), 0, 200, null},//all parameter
         };
     }
 
