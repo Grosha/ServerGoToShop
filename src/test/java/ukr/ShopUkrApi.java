@@ -16,24 +16,8 @@ public class ShopUkrApi extends API {
 
     public ShopUkrApi() {
 
-        /*OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
-        httpClient.addInterceptor(new Interceptor() {
-            @Override
-            public Response intercept(Interceptor.Chain chain) throws IOException {
-                Request original = chain.request();
-
-                Request request = original.newBuilder()
-                        .header("Guid", "Your-App-Name")
-                        .header("Signature", "application/vnd.yourapi.v1.full+json")
-                        .method(original.method(), original.body())
-                        .build();
-
-                return chain.proceed(request);
-            }
-        });*/
-
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("ukr://gtsop.com")
+                .baseUrl("https://gtsop.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(httpClient())
                 .build();

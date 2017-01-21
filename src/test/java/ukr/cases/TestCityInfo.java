@@ -1,4 +1,4 @@
-package ukr.test;
+package ukr.cases;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -19,7 +19,7 @@ import static org.testng.Assert.assertEquals;
 public class TestCityInfo extends HomeTest implements Parameters, ErrorResponses {
 
     @DataProvider(name = "getUkrCityInfoUkr")
-    public static Object[][] getCityParamUkr() {
+    public static Object[][] testGetCityParamUkr() {
         return new Object[][]{
                 {KIEV_ID, KIEV_UKR, 200, null, null},//all parameter
                 {DNIPRO_ID, DNIPRO_UKR, 200, null, null},//all parameter
@@ -43,7 +43,7 @@ public class TestCityInfo extends HomeTest implements Parameters, ErrorResponses
     }
 
     @DataProvider(name = "getUkrCityInfoRu")
-    public static Object[][] getShopParamUkrRu() {
+    public static Object[][] testGetShopParamUkrRu() {
         return new Object[][]{
                 {KIEV_ID, KIEV_RU, 200, null, null},//all parameter
                 {DNIPRO_ID, DNIPRO_RU, 200, null, null},//all parameter

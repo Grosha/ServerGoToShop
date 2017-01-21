@@ -1,4 +1,4 @@
-package ukr.test;
+package ukr.cases;
 
 
 import org.testng.annotations.DataProvider;
