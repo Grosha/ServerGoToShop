@@ -11,4 +11,13 @@
             </class>
         </classes>
     </test>
+    <test name="test GetShop">
+        <classes>
+            <class name="ukr.cases.TestGetShop">
+                <methods>
+                    <include name="testGetShop"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
