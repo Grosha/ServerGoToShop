@@ -4,10 +4,10 @@
     <test name="test CityInfo">
         <classes>
             <class name="ukr.cases.TestCityInfo">
-                <!--<methods>
-                    <include name="testGetCityParamUkr"/>
-                    <include name="testGetShopParamUkrRu"/>
-                </methods>-->
+                <methods>
+                    <include name="testGetCityInfoUkrUkr"/>
+                    <include name="testGetCityInfoUkrRu"/>
+                </methods>
             </class>
         </classes>
     </test>

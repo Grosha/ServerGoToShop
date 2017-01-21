@@ -19,7 +19,7 @@ import static org.testng.Assert.assertEquals;
 public class TestCityInfo extends HomeTest implements Parameters, ErrorResponses {
 
     @DataProvider(name = "getUkrCityInfoUkr")
-    public static Object[][] testGetCityParamUkr() {
+    public static Object[][] getCityParamUkr() {
         return new Object[][]{
                 {KIEV_ID, KIEV_UKR, 200, null, null},//all parameter
                 {DNIPRO_ID, DNIPRO_UKR, 200, null, null},//all parameter
@@ -31,7 +31,7 @@ public class TestCityInfo extends HomeTest implements Parameters, ErrorResponses
     }
 
     @Test(dataProvider = "getUkrCityInfoUkr")
-    public void getCityInfoUkrUkr(long cityId, String cityName, int stCode, String error, String errorMassage) throws IOException {
+    public void testGetCityInfoUkrUkr(long cityId, String cityName, int stCode, String error, String errorMassage) throws IOException {
         Response<CityInfo> response = ShopUkrApi.get().getCityInfoUkrUkr(cityId).execute();
         assertEquals(response.code(), stCode, "Wrong status code for request getShop");
 
@@ -43,7 +43,7 @@ public class TestCityInfo extends HomeTest implements Parameters, ErrorResponses
     }
 
     @DataProvider(name = "getUkrCityInfoRu")
-    public static Object[][] testGetShopParamUkrRu() {
+    public static Object[][] getShopParamUkrRu() {
         return new Object[][]{
                 {KIEV_ID, KIEV_RU, 200, null, null},//all parameter
                 {DNIPRO_ID, DNIPRO_RU, 200, null, null},//all parameter
@@ -55,7 +55,7 @@ public class TestCityInfo extends HomeTest implements Parameters, ErrorResponses
     }
 
     @Test(dataProvider = "getUkrCityInfoRu")
-    public void getCityInfoUkrRu(long cityId, String cityName, int stCode, String error, String errorMassage) throws IOException {
+    public void testGetCityInfoUkrRu(long cityId, String cityName, int stCode, String error, String errorMassage) throws IOException {
         Response<CityInfo> response = ShopUkrApi.get().getCityInfoUkrRu(cityId).execute();
         assertEquals(response.code(), stCode, "Wrong status code for request getShop");
 
