@@ -5,9 +5,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import po.shops.Shops;
 import retrofit2.Response;
-import ukr.ErrorResponses;
-import ukr.Parameters;
-import ukr.ShopUkrApi;
+import ukr.*;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.IOException;
@@ -24,7 +22,7 @@ import static org.testng.Assert.assertNotNull;
 /**
  * Created by groshkka on 15.06.16.
  */
-public class TestGetShop implements Parameters, ErrorResponses {
+public class TestGetShop extends HomeTest {
     private int totalCount = 0;
     private boolean count = false;
 

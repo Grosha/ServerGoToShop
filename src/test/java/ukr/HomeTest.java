@@ -9,7 +9,7 @@ import static org.testng.Assert.assertEquals;
 /**
  * Created by groshkka on 19.01.17.
  */
-public class HomeTest {
+public class HomeTest implements Parameters, ParameterCity, ErrorResponses {
     public static void checkResponses(String responses, String message, String messageJenkinsl) {
         Gson gson = new Gson();
         ShopServerError actualServerError = gson.fromJson(responses, ShopServerError.class);
@@ -38,5 +38,23 @@ public class HomeTest {
             } else line = line + param[i] + ",";
         }
         return line;
+    }
+
+    public boolean assertNumberTrue(String data) {
+        try {
+            long l = Long.parseLong(data);
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
+    }
+
+    public static String errorInvalidParam(String error, String... param) {
+        for (int i = 0; i < param.length; i++) {
+            if (i + 1 == param.length) {
+                error = error + param[i];
+            } else error = error + param[i] + ",";
+        }
+        return error;
     }
 }

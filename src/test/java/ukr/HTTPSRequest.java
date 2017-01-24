@@ -1,6 +1,7 @@
 package ukr;
 
 
+import po.category.Categories;
 import po.cityinfo.CityInfo;
 import po.shops.Shops;
 import retrofit2.Call;
@@ -21,6 +22,9 @@ public interface HTTPSRequest {
 
     @GET("/api/cities/{city_id}")
     Call<CityInfo> getCityInfoUkrRu(@Path("city_id") long cityId);
+
+    @GET("api/categories")
+    Call<Categories> getCategories(@Query("limit") int limit, @Query("offset") int offset, @Query("city_id") Long city_id, @Query("fields") String fields);
 
     /*@Headers({
             "Guid:3d22625a-f62e-450e-a44f-6ccdd2abaedb",

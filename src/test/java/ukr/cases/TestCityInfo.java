@@ -4,10 +4,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import po.cityinfo.CityInfo;
 import retrofit2.Response;
-import ukr.ErrorResponses;
-import ukr.HomeTest;
-import ukr.Parameters;
-import ukr.ShopUkrApi;
+import ukr.*;
 
 import java.io.IOException;
 
@@ -16,7 +13,7 @@ import static org.testng.Assert.assertEquals;
 /**
  * Created by groshkka on 20.01.17.
  */
-public class TestCityInfo extends HomeTest implements Parameters, ErrorResponses {
+public class TestCityInfo extends HomeTest {
 
     @DataProvider(name = "getUkrCityInfoUkr")
     public static Object[][] getCityParamUkr() {

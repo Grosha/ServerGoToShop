@@ -20,4 +20,10 @@
             </class>
         </classes>
     </test>
+    <test name="test GetCategories">
+        <classes>
+            <class name="ukr.cases.TestCategories">
+            </class>
+        </classes>
+    </test>
 </suite>
